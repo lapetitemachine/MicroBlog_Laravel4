@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://localhost/laravelMvc/public',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'lmFGcnOct3vrJfz2amoRrNx0YXKiNSPe',
+	'key' => '5fUwWutlla6FR7JwRqvUn819U2CM3ytV',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -114,8 +114,9 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
+		'Juy\Profiler\Providers\ProfilerServiceProvider',
+		'Way\Generators\GeneratorsServiceProvider'
 	),
-
 	/*
 	|--------------------------------------------------------------------------
 	| Service Provider Manifest
@@ -178,6 +179,8 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+
+		'Profiler'      => 'Juy\Profiler\Facades\Profiler',
 
 	),
 

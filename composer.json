@@ -3,7 +3,12 @@
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+
+		"juy/profiler" : "dev-master",
+
+		"laravel/framework": "4.0.*",
+		"way/generators": "dev-master"
 	},
 	"autoload": {
 		"classmap": [
@@ -12,7 +17,9 @@
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
-			"app/tests/TestCase.php"
+			"app/tests/TestCase.php",
+
+			"vendor/mvc"
 		]
 	},
 	"scripts": {

@@ -60,6 +60,21 @@ $framework = $app['path.base'].'/vendor/laravel/framework/src';
 
 require $framework.'/Illuminate/Foundation/start.php';
 
+
+/*
+|--------------------------------------------------------------------------
+| Load The Avatar Macro **
+|--------------------------------------------------------------------------
+|
+*/
+
+
+require $app['path.base'].'/app/macros/avatar.php';
+
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
