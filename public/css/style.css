@@ -1,0 +1,603 @@
+/*\  *************************************
+ 
+IE8 AND BELOW :  I DON'T GIVE A .... 
+
+************************************** \*/
+
+
+
+
+/* -------------------------------
+    Global  
+------------------------------- */
+
+html { overflow-y: scroll; }
+
+body {  
+    background: #DAEBEB;
+    font-family: Arial, sans-serif;
+    padding-bottom: 2em;
+    line-height: 1.1em;
+}
+
+a {
+    color: #36B0D5;
+    text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+
+
+
+/* -------------------------------
+    Clearfix
+------------------------------- */
+
+header:after, 
+.messages li:after, 
+#users:after
+{
+    clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+#users a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+/* -------------------------------------------------
+    Alerts (flash messages, global form errors)
+------------------------------------------------- */
+
+.alert-success, .alert-info {
+    font-weight: bold;
+    text-align: center;
+    padding: 2em;
+}
+
+.alert-success {
+    color: #4DC381;
+    background: -webkit-radial-gradient(50% 100%, 50% 7px, #4DC381 0%, #FFF 110%);
+}
+
+.alert-info {
+    color: #4DB8C3;
+    background: -webkit-radial-gradient(50% 100%, 50% 7px, #4DB8C3 0%, #FFF 110%);   
+}
+
+.alert-error {
+    color: #C34D62;
+    font-weight: bold;
+    padding: 1em 1em 2em 0;
+}
+
+
+
+
+.alert-success:before, .alert-info:before, .alert-error:before {
+    font-family: 'post';
+    padding-right: 1em;
+} 
+.alert-success:before, .alert-info:before {
+    content: "\f00c";
+}
+.alert-error:before {
+    content: "\f00d";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------
+    Header
+------------------------ */
+header {
+    background: #1F949E;
+    color: #FFF;
+    padding: 3.5em calc(50% -  30em);
+}
+
+h1 {  
+    float: left;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+h1 small {font-size: 0.6em; }
+
+header div {
+    float: right;
+    font-size: 0.8em;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------
+    Nav
+------------------------------------------------ */
+
+nav {   
+    background: #000; 
+    padding: 1em calc(50% -  30em) 0;
+}
+
+nav li {
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    font-size: 0.9em;
+    min-width: 10em;
+    padding: 1em 0 2em;
+    text-align: center;
+}
+
+nav a { 
+    color: #FFF;
+    display: block;
+    font-weight: bold;
+}
+
+nav i {
+    display: block;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    transition: all 0.2s;
+}
+
+
+/*- - - - - - - -*/
+/* Hovered Tab */
+
+nav a:hover {
+    color: #53c3EB;
+    text-decoration: none;
+}
+
+nav a:hover i { -webkit-transform: scale(1.3); }
+
+
+/*- - - - - - - -*/
+/* Active Tab */
+
+nav li.active { 
+    background: #fff;
+    padding-top: 0;
+  
+    position: relative;
+    top: 7px;
+}
+
+nav li.active a {
+    color: #333;
+    position: relative;
+    top: 2em;
+}
+
+
+nav li.active i { -webkit-transform: scale(1.4); }
+
+
+/*- - - - - - - - -  */
+/* Sign in, up, out */
+
+.connection {
+    float: right;
+    font-size: 0.8em;
+    margin-left: 2em;
+    margin-top: 0.5em;
+    min-width: 0;
+}
+
+.connection a {
+    border-radius: 15px;
+    color: #CCC;
+    padding: 0.8em 1em;
+}
+
+.connection a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.connection.active { 
+    background: none;
+    padding-top: 0.4em;
+    
+}
+
+.connection.active a {
+    background: #FFF;
+    color: #333;
+    position: static;
+    -webkit-transform: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------
+    Content
+----------------------------- */
+section {  
+    max-width: 56em;
+    margin: 0 auto;
+    background: #FFF;  
+    border-radius: 0 0 5px 5px;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------
+    Messages
+----------------------------- */
+
+#messages li {
+    background: -webkit-radial-gradient(50% 0%, 50% 5px, #D4D4D4 0%, #FFF 130%);
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 0.9em;
+    padding: 3em 4em;
+} 
+#messages li:first-child { background: none; }
+#messages li:last-child { border-bottom: none; }
+
+#messages img {
+    float: left;
+    margin-right: 1em;
+}
+
+#messages div { /* date + delete btn */
+    float: right;
+    font-size: 0.8em;
+    margin-left: 1em;
+}
+
+#messages span { /* date */
+    color: #333;
+}
+
+#messages a {
+    display: block;
+    padding-top: 2em;
+    text-align: right;
+}
+
+#messages q {
+    display: block;
+    margin-right: 8em;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------
+                Users list
+-------------------------------------------- */
+
+/*- - - - - - - - - - - */
+/*      2 colunms       */
+
+#users li {
+    width: calc(50% - 1em);
+    display: inline-block;
+}
+
+#users li:nth-child(odd) {
+    padding: 1em 1em 1em 0;
+    float: left;
+} 
+
+#users li:nth-child(even) {
+    padding: 1em 0 1em 1em;
+    float: right;
+}
+
+#users li:after { /* radial shadow */
+    content: '';
+    display: block;
+    height: 5px; 
+    background: -webkit-radial-gradient(50% 0%, 50% 5px, #aaa 0%, #fff 110%);
+}
+#users li:hover:after { background: -webkit-radial-gradient(50% 0%, 50% 5px, #777 0%, #fff 110%); }
+
+#users a {
+    background: #F3F3F3;
+    color: #000;
+    display: block;
+    padding: 2em;
+    transition: background .3s ease-out;
+}
+#users a:hover {
+    background: #E3F0F2;
+    text-decoration: none;
+}
+
+
+/*- - - - - - - - - - */
+/*      Avatar       */
+
+#users img {
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+
+
+/*- - - - - - - - - - */
+/*      Chevron       */
+
+#users i { 
+    float: right;
+    font-size: 0.75em;
+}
+
+#users a:hover i {
+    color: #36B0D5;
+}
+
+#users a:hover i:after {
+    color: #36B0D5;
+    content: "See messages";
+    padding-left: 1em;
+}
+
+
+/*- - - - - - - - - - */
+/*      Bio           */
+
+#users span {  /* Clearfix !! */
+    display: block;
+    font-size: 0.9em;
+    margin-top: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------
+    Profile 
+----------------------------------------------------*/
+
+#profile {
+    margin-top: 1em;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - */
+/*     Profile (name, avatar, bio)      */
+
+#profile > div { /* Clearfix ! */
+    background: -webkit-radial-gradient(50% 100%, 50% 5px, #CCC 0%, #F5F5F5 110%);
+    margin-bottom: 3em;
+    padding: 2em 2em 4em 2em;
+}
+
+
+#profile h2 { 
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+#profile img {
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+#profile > div p { /* bio */
+    font-size: 0.9em;
+    margin-top: 2em;
+    margin-bottom: -2em;
+    
+}
+
+#profile a:first-child { /* Edit profile btn */
+    float: right;
+    font-size: 0.85em;
+}
+
+
+
+/*- - - - - - - - - - */
+/*     Messages      */
+
+#profile li {
+    border-bottom: 1px solid #E6E6E6;
+    font-size: 0.9em;
+    padding: 2.5em;
+}
+#profile li:last-child {
+    border-bottom: none;
+}
+
+#profile li div { /* date + delete btn */
+    float: right;
+    font-size: 0.8em;
+    margin-left: 3em;
+}
+
+#profile span { color: #333; }
+
+#profile li a { /* Delete buttons */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%);
+    padding-left: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------
+    Forms 
+----------------------------------------*/
+
+legend { 
+    background: -webkit-radial-gradient(50% 100%, 50% 5px, #ccc 0%, #fff 110%);
+    border: none;
+    color:#333333;
+    font-size: 1.35em;
+    padding: 0.5em 0 1em;
+    text-align: center; 
+    width:100%;
+}
+
+fieldset {
+    margin: 2em auto 0;
+    padding: 0;
+    width: 14rem;
+}
+
+label {
+    color: #555;
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 2.5em;
+}
+label:after { content : ' :'; }
+
+
+input[type=text],
+input[type=password],
+textarea {
+    font-family: Arial, sans-serif;
+    color: #555;
+    border: 1px solid #CECECE;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    display: block;
+    font-size: 0.9em;
+    height: 1.5em;
+    padding: 0.3rem 0.6rem;   
+    margin: 0 0 1em;
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;    
+    width: 12.8rem;
+}
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+     border-color: #36B0D5;
+     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #36B0D5;
+     -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #36B0D5;
+     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px #36B0D5;
+     outline:0;
+}
+
+input[type=file] { margin-bottom: 2em; }
+
+textarea{ height:auto; }
+
+input[type=submit] {
+    background: #58B6FE;
+    border: 2px solid #3DA0BD;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin-top: 3em; 
+    padding: 0.4rem 0.6rem;
+    transition: all 0.3s;
+    width: 14rem;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+    background: #FFF;
+    border-color: #30A0F6;
+    color: #30A0F6;
+    text-shadow: none;
+}
+
+form .error {
+    display: block;
+    color: #C34D62;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
