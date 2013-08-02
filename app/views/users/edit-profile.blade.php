@@ -8,7 +8,7 @@
     <fieldset>
            
         {{ Form::label('avatar') }}
-        {{  HTML::avatar($user) }}   
+        {{  HTML::avatar(Auth::user()) }}   
         {{ $errors->first('avatar', '<span class="error">:message</span>') }}
         {{ Form::file('avatar') }}
 

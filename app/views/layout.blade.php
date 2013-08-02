@@ -11,7 +11,7 @@
       
         <header>        
             <h1>
-                NameOrLogoHere
+                MicroBlogMVC
                 <small>- Laravel 4.0.5</small>
             </h1>
             <div>

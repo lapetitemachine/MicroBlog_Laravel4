@@ -8,24 +8,31 @@ class UserTableSeeder extends Seeder {
 
  
         User::create(array(
-            'username' => 'Steven',
+            'username' => 'Abraham_Lincoln ',
             'password' => Hash::make('pass'),
-            'bio' => "Cumque, itaque expedita placeat suscipit dolores nostrum soluta cum ut nesciunt voluptatem facilis accusamus incidunt saepe magni ducimus hic dicta quasi eum."
+            'bio' => '16th President of the United States',
+            'avatar' => 'jpg'
         ));
  
         User::create(array(
-            'username' => 'John',
-            'password' => Hash::make('pass')
+            'username' => 'Albert_Einstein',
+            'password' => Hash::make('pass'),
+            'bio' => 'Theoretical physicist who developed the general theory of relativity',
+            'avatar' => 'jpg'
         ));
 
         User::create(array(
-            'username' => 'Jane',
-            'password' => Hash::make('pass')
+            'username' => 'Edgar_Allan_Poe',
+            'password' => Hash::make('pass'),
+            'bio' => 'Author, poet, editor, and literary critic, considered part of the American Romantic Movement',
+            'avatar' => 'jpg'
         ));
 
         User::create(array(
-            'username' => 'Nobody',
-            'password' => Hash::make('pass')
+            'username' => 'Emily_Dickinson',
+            'password' => Hash::make('pass'),
+            'bio' => 'American poet',
+            'avatar' => 'jpg'
         ));
     }
  

@@ -1,6 +1,6 @@
 <?php
 
-use Mvc\Images\ImageResizer;
+use MicroBlog\Images\ImageResizer;
 
 
 class UserController extends Controller 

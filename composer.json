@@ -19,7 +19,7 @@
 			"app/database/seeds",
 			"app/tests/TestCase.php",
 
-			"vendor/mvc"
+			"app/lib"
 		]
 	},
 	"scripts": {
