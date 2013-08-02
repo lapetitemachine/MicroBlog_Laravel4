@@ -1,0 +1,14 @@
+Why no salt for users ?
+----------------------
+
+https://github.com/laravel/laravel/pull/41
+
+ taylorotwell commented :
+
+I'm still not sure what advantage this is giving us over the current Auth system. The Laravel Auth system uses bcrypt. Bcrypt passwords are already salted and the salt is stored in the password. The format for bcrypt hashes is {two character work}{round}{22 character salt}{31 encrypted characters}. As far as I'm aware, there is no need to do any additional salting.
+
+
+
+/**********************************************************************/
+/**********************************************************************/
+/**********************************************************************/
