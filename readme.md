@@ -12,7 +12,7 @@
 
 #### Migrations
 
-    cd ***LaravalMvc/
+    cd ***MicroBlogLaravel/
 
     php artisan migrate:install
     php artisan migrate
