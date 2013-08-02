@@ -7,11 +7,11 @@
     git clone https://github.com/steven-/LaravelMvc MicroBlogLaravel
     cd MicroBlogLaravel
 
-### Install dependencies
+#### Install dependencies
 
     composer install
 
-### Permissions 
+#### Permissions 
 
 Make the app/storage and public/avatars directories writable
 
