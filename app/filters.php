@@ -11,10 +11,10 @@
 |
 */
 
-// App::before(function($request)
-// {
-// 	//
-// });
+App::before(function($request)
+{
+	Input::replace(array_map('trim', Input::all()));
+});
 
 
 // App::after(function($request, $response)
@@ -94,3 +94,6 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+
+
