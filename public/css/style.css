@@ -319,7 +319,7 @@ section {
     max-width: 56em;
     margin: 0 auto;
     background: #fff;  
-    padding: 2em;
+    padding: 3.5em 2em 2em;
     -webkit-border-radius:0 0 5px 5px;
        -moz-border-radius:0 0 5px 5px;
             border-radius:0 0 5px 5px;
@@ -350,7 +350,10 @@ section {
 
 
 
-#messages li:first-child { background: none; }
+#messages li:first-child { 
+    background: none;
+    padding-top: 2em;
+}
 #messages li:last-child { border-bottom: none; }
 
 #messages img {
@@ -507,10 +510,6 @@ section {
 /* ----------------------------------------------------
     Profile 
 ----------------------------------------------------*/
-
-#profile {
-    margin-top: 1em;
-}
 
 
 /* - - - - - - - - - - - - - - - - - - - */
