@@ -5,10 +5,11 @@
 
     {{ Form::open(array('route' => 'sign-up', 'novalidate')) }}
         
-        <legend>Sign Up</legend>
         
 
         <fieldset>
+            
+            <legend>Sign Up</legend>
            
             {{ Form::label('username') }}
             {{ $errors->first('username', '<span class="error">:message</span>') }}

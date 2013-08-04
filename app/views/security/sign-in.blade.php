@@ -5,10 +5,12 @@
 
     {{ Form::open(array('route' => 'sign-in', 'novalidate')) }}
         
-        <legend>Sign In</legend>
         
 
         <fieldset>
+            
+            <legend>Sign In</legend>
+            
             @if (Session::has('signInFail'))
                 <div class="alert-error">Bad credentials</div>
             @endif

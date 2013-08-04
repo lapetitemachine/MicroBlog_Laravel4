@@ -583,12 +583,18 @@ section {
     Forms 
 ----------------------------------------*/
 
-legend { 
+fieldset {
+    margin: 0 auto;
+    padding: 0;
+    width: 14rem;
+}
 
+legend { 
     border: none;
     color: #333333;
     font-size: 1.35em;
-    padding: 0.5em 0 1em;
+    padding: 0 0 1em;
+    margin-bottom: 1.5em;
     text-align: center; 
     width: 100%;
     background-image: -webkit-radial-gradient(ellipse 50% 5px at 50% 100%, #ccc, #fff 110%);
@@ -596,12 +602,7 @@ legend {
         background-image: -ms-radial-gradient(ellipse 50% 5px at 50% 100%, #ccc, #fff 110%);
          background-image: -o-radial-gradient(ellipse 50% 5px at 50% 100%, #ccc, #fff 110%);
           background-image:   radial-gradient(ellipse 50% 5px at 50% 100%, #ccc, #fff 110%);
-}
-
-fieldset {
-    margin: 2em auto 0;
-    padding: 0;
-    width: 14rem;
+    width: 350%; /* for shadow */
 }
 
 label {
