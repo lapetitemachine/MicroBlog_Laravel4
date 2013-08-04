@@ -32,8 +32,10 @@ a {
 }
 a:hover { text-decoration: underline; }
 
-
-
+.wrapper {
+    max-width: 60em;
+    margin: 0 auto;
+}
 
 /* -------------------------------
     Clearfix
@@ -129,7 +131,7 @@ header:after,
 header {
     background: #1f949e;
     color: #fff;
-    padding: 3.5em calc(50% -  30em);
+    padding: 3.5em 0;
 }
 
 h1 {  
@@ -140,7 +142,7 @@ h1 {
 
 h1 small {font-size: 0.6em; }
 
-header div {
+header div div {
     float: right;
     font-size: 0.8em;
 }
@@ -155,7 +157,12 @@ header a {
 
 
 
-
+#test {
+    height: 5px;
+    width: 60em;
+    background: red;
+    margin: 0 auto;
+}
 
 
 
@@ -167,7 +174,7 @@ header a {
 
 nav {   
     background: #000; 
-    padding: 1em calc(50% -  30em) 0;
+    padding: 1em 0 0;
 }
 
 nav li {
@@ -385,18 +392,18 @@ section {
 /*      2 colunms       */
 
 #users li {
-    width: calc(50% - 1em);
+    width: 48%;
     display: inline-block;
 }
 
 #users li:nth-child(odd) {
-    padding: 1em 1em 1em 0;
+    padding: 1em 2% 1em 0;
     clear: left;
     float: left;
 } 
 
 #users li:nth-child(even) {
-    padding: 1em 0 1em 1em;
+    padding: 1em 0 1em 2%;
     clear: right;
     float: right;
 }

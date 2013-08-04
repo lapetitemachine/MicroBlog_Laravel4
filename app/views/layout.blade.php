@@ -9,15 +9,17 @@
     </head>
     <body>
       
-        <header>        
-            <h1>
-                MicroBlogMVC
-                <small>- Laravel 4.0.5</small>
-            </h1>
-            <div>
-                Written by 
-                <a href="#">Someone</a>
-            </div>
+        <header> 
+            <div class="wrapper">
+                <h1>
+                    MicroBlogMVC
+                    <small>- Laravel 4.0.5</small>
+                </h1>
+                <div>
+                    Written by 
+                    <a href="#">Someone</a>
+                </div>
+            </div>       
         </header>
 
 
