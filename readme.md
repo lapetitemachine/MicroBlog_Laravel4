@@ -2,16 +2,16 @@
 
 ### Installation
 
-#### Clone this repo
+##### Clone this repo
 
     git clone https://github.com/steven-/LaravelMvc MicroBlogLaravel4
     cd MicroBlogLaravel4
 
-#### Install dependencies
+##### Install dependencies
 
     php composer.phar install
 
-#### Permissions 
+##### Permissions 
 
 Make the app/storage and public/avatars directories writable
 
@@ -19,18 +19,18 @@ Make the app/storage and public/avatars directories writable
     chmod -R o+w public/avatars
 
 
-#### Create a database
+##### Create a database
 
 MySQL :
 
     create database microblog_laravel4 default character set utf8 collate utf8_general_ci;
 
-#### Migrate the db
+##### Migrate the db
 
     php artisan migrate:install
     php artisan migrate
     
-#### Seed the db with sample data
+##### Seed the db with sample data
 
     php artisan db:seed
 
