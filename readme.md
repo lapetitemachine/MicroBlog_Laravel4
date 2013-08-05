@@ -4,12 +4,12 @@
 
 #### Clone this repo
 
-    git clone https://github.com/steven-/LaravelMvc MicroBlogLaravel
-    cd MicroBlogLaravel
+    git clone https://github.com/steven-/LaravelMvc MicroBlogLaravel4
+    cd MicroBlogLaravel4
 
 #### Install dependencies
 
-    composer install
+    php composer.phar install
 
 #### Permissions 
 
@@ -21,7 +21,9 @@ Make the app/storage and public/avatars directories writable
 
 #### Create a database
 
-    create database laravelMvc default character set utf8;
+MySQL :
+
+    create database microblog_laravel4 default character set utf8 collate utf8_general_ci;
 
 #### Migrate the db
 
