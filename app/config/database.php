@@ -55,7 +55,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'laravelMvc',
+			'database'  => 'microblog_laravel4',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',
