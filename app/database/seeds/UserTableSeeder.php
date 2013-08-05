@@ -8,7 +8,7 @@ class UserTableSeeder extends Seeder {
 
  
         User::create(array(
-            'username' => 'Abraham_Lincoln ',
+            'username' => 'Abraham_Lincoln',
             'password' => Hash::make('pass'),
             'bio' => '16th President of the United States',
             'avatar' => 'jpg'
