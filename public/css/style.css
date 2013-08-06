@@ -81,7 +81,8 @@ header:after,
 .alert-success, .alert-info {
     font-weight: bold;
     text-align: center;
-    padding: 2em;
+    padding: 0 2em 2em;
+    margin-bottom: 2em;
 }
 
 .alert-success {

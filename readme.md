@@ -15,8 +15,7 @@
 
 Make the app/storage and public/avatars directories writable
 
-    chmod -R o+w app/storage
-    chmod -R o+w public/avatars
+    chmod -R o+w app/storage public/avatars
 
 
 ##### Create a database
